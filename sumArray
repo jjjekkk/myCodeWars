@@ -1,7 +1,13 @@
+//sum without first and last
+
  function sumArray(array) {
-let sum = 0;
+let sum = 0; 
+if (array===null||array===undefined||array.length<3){
+  return sum
+} else {
 for( let i = 0; i<array.length; i++){
   sum += array[i]
 }
 return sum - Math.max.apply(null, array) - Math.min.apply(null, array)
+}
 }
