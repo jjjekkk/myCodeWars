@@ -1,4 +1,4 @@
-//sum without first and last
+//sum without first meaning and last meaning
 
  function sumArray(array) {
 let sum = 0; 
