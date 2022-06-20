@@ -24,4 +24,4 @@ return pairArr.join("")
 }
 
 
-console.log(DNAStrand("AAAA"))
+console.log(DNAStrand("TTTT"))
