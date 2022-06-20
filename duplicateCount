@@ -1,0 +1,16 @@
+ function duplicateCount(text){
+   let textStr = String(text);
+   let textArr = textStr.toLowerCase().split('');
+const yourArrayWithoutDuplicates = [...new Set(textArr)]
+
+
+let duplicates = [...textArr]
+yourArrayWithoutDuplicates.forEach((item) => {
+const i = duplicates.indexOf(item)
+duplicates = duplicates
+.slice(0, i)
+.concat(duplicates.slice(i + 1, duplicates.length))
+})
+return duplicates
+}
+console.log(duplicateCount('Indivisibilities'))
