@@ -1,5 +1,5 @@
 let hotpo = function(n){
-  if(n == 0) return 0; //Optional Handler to n = 0
+  if(n == 0|| n == 1) return 0; //Optional Handler to n = 0
   let sumIteration = 0;
    do{
      if (n % 2 == 0) {
@@ -7,7 +7,7 @@ let hotpo = function(n){
      } else {
        n = 3*n + 1
      }
-     sumIteration += 1 
+     sumIteration++
   }
   while (n != 1);
   return sumIteration
